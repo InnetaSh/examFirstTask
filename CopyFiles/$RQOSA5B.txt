@@ -1,0 +1,102 @@
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\111Copy.txt, размер файла = 19, количество замененных слов = 1
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\112Copy.txt, размер файла = 39, количество замененных слов = 2
+Name = E:\STEP\Системное программирование\examFirstTask\CopyFiles\22222Copy.txt, размер файла = 26, количество замененных слов = 1
+Топ-10 запрещенных слов:
+qqq: 1
+www: 1
