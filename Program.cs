@@ -40,25 +40,60 @@ class Program
     static char[] symb = { ' ', ',', '.', ';', ':', '-', '!', '?' };
     record class FileReplaceCount(string path, int count);
     static List<FileReplaceCount> fileReplaceCount = new List<FileReplaceCount>();
-   
+    private static EventWaitHandle waitHandle = new ManualResetEvent(initialState: true);
+
+    static bool flagPause;
     static async Task Main(string[] arg)
     {
-        using (CancellationTokenSource cts = new CancellationTokenSource())
+        //using (CancellationTokenSource cts = new CancellationTokenSource())
         {
-           
-
+            CancellationTokenSource cts = new CancellationTokenSource();
             try
             {
-                await Menu(cts, cts.Token);
+                Task.Run(() => Menu(cts, cts.Token));
             }
             catch (OperationCanceledException)
             {
                 Console.WriteLine("Поиск файлов был отменен.");
             }
+        }
 
-            
+        GetCommand();
+    }
+
+    private static async Task GetCommand()
+    {
+        while (true)
+        {
+            if (Console.KeyAvailable)
+            {
+                ConsoleKeyInfo key = Console.ReadKey(true);
+                switch (key.Key)
+                {
+                    case ConsoleKey.P:
+                        OnPauseClick();
+                        flagPause = true;
+                        break;
+                    case ConsoleKey.R:
+                        OnResumeClick();
+                        flagPause = false;
+                        break;
+                    default:
+                        break;
+                }
+            }
         }
     }
+    public static void OnPauseClick()
+    {
+        waitHandle.Reset();
+    }
+
+    public static void OnResumeClick()
+    {
+        waitHandle.Set();
+    }
+
 
     static async Task Menu(CancellationTokenSource cts, CancellationToken cancellationToken)
     {
@@ -108,7 +143,7 @@ class Program
                     case 0:
                         break;
                     case 1:
-                        Console.Clear();
+                        Console.Clear();                        
                         await GetFiles(cts, cts.Token);
                         await FileReport();
                         break;
@@ -167,12 +202,15 @@ class Program
     static async Task GetFiles(CancellationTokenSource cts, CancellationToken cancellationToken)
     {
        
-        var progressTask = ProgressBar(cancellationToken);
-        await Task.Delay(20000);
+        var progressTask = ProgressBar(cts);
+        //await Task.Delay(20000);
 
         var drives = DriveInfo.GetDrives();
         var  E = drives.FirstOrDefault(x => x.Name == "E:\\");
+        Console.SetCursorPosition(1, 8);
+        Console.CursorVisible = false;
         Console.WriteLine("Идет поиск текстовых файлов по диску E...");
+       
         await Proccess(E, progressTask, cts, cancellationToken);
         //foreach (var drive in drives)
         //{
@@ -198,24 +236,27 @@ class Program
 
         var fitFiles = new List<string>();
 
-       
-        
 
+        Console.SetCursorPosition(1, 8);
+        Console.WriteLine("");
         Console.WriteLine($"Нaйдено файлов:{files.Count} ");
         Console.WriteLine("Идет поиск запрещенных слов....");
-        
+
+        Console.WriteLine("При необходимости, можете выполнить действия: пауза(P), продолжить выполнение работы(R)");
+
 
         bool isPaused = false;
 
 
         foreach (var fn in files)
         {
+            waitHandle.WaitOne();
             try
             {
                 cancellationToken.ThrowIfCancellationRequested();
 
                 var flag = false;
-                string[] lines = await File.ReadAllLinesAsync(fn);
+                string[] lines = File.ReadAllLines(fn);
 
                 foreach (var line in lines)
                 {
@@ -230,10 +271,16 @@ class Program
                 if (flag) fitFiles.Add(fn);
             }
             catch (Exception ex) { }
+            Task.Delay(10).Wait();
         }
 
-       
-        cts.Cancel();
+        try
+        {
+            cts.Cancel(true);
+        }
+        catch(Exception ex) 
+        { }
+
         await progressTask;
         Console.Clear();
 
@@ -327,38 +374,37 @@ class Program
        
     }
 
-    static async Task ProgressBar(CancellationToken cancellationToken)
+    static async Task ProgressBar(CancellationTokenSource cts)
     {
 
         int progress = 0;
         int maxProgress = 18;
 
-        while (!cancellationToken.IsCancellationRequested)
+        while (!cts.IsCancellationRequested)
         {
             Console.SetCursorPosition(15, 2);
-            Console.WriteLine("     Загрузка...");
-            Console.SetCursorPosition(15, 3);
-            Console.WriteLine("--------------------");
-            Console.SetCursorPosition(15, 4);
-            Console.Write("|");
-            Console.Write(new string('*', progress));
-            Console.SetCursorPosition(15 + maxProgress + 1, 4);
-            Console.WriteLine("|");
-            Console.SetCursorPosition(15, 5);
-            Console.WriteLine("--------------------");
+                Console.WriteLine(flagPause ? "     Пауза..." : "     Загрузка...");
+                Console.SetCursorPosition(15, 3);
+                Console.WriteLine("--------------------");
+                Console.SetCursorPosition(15, 4);
+                Console.Write("|");
+                Console.Write(new string('*', progress));
+                Console.SetCursorPosition(15 + maxProgress + 1, 4);
+                Console.WriteLine("|");
+                Console.SetCursorPosition(15, 5);
+                Console.WriteLine("--------------------");
 
-            progress = (progress + 1) % (maxProgress + 1);
-            await Task.Delay(500);
+                if(!flagPause)
+                    progress = (progress + 1) % (maxProgress + 1);
+                await Task.Delay(500);
 
 
-            Console.SetCursorPosition(15, 4);
-            Console.Write("|" + new string(' ', maxProgress) + "|");
-            Console.SetCursorPosition(15, 3);
-            Console.WriteLine("--------------------");
-            Console.SetCursorPosition(15, 5);
-            Console.WriteLine("--------------------");
+                Console.SetCursorPosition(15, 4);
+                Console.Write("|" + new string(' ', maxProgress) + "|");
+                Console.SetCursorPosition(15, 3);
+                Console.WriteLine("--------------------");
+                Console.SetCursorPosition(15, 5);
+                Console.WriteLine("--------------------");
         }
     }
-
-
 }
